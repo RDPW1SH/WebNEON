@@ -9,12 +9,11 @@
 body {
     width: 100%;
     height: 100%;
+    min-height: 100vh;
     margin: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .background {
-    min-width: 100vw;
-    min-height: 100vh;
     width: 100%;
     height: 100%;
     background-color:rgb(27, 25, 25);
@@ -25,11 +24,16 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    opacity: 0.9;
+    opacity: 0.5;
     flex: auto;
-    border-bottom:  linear-gradient(90deg,#e633e0,#e548c8,#b819ab,#e633e0,#e548c8);
-    animation: reverse linear infinite;
+    border-bottom: 2px solid transparent;
+    transition: cubic-bezier(0, 0.41, 0.84, 1.11) 0.9s;
+    
 }
+.neon-navbar:hover {
+    opacity: 0.9;
+}
+
 .neon-navbar ul {
     display: flex;
     list-style: none;
@@ -39,13 +43,69 @@ body {
     letter-spacing: 2px;
     text-decoration: none;
     color: rgb(255, 255, 255);
-    text-shadow:
-    0 0 5px #f6d,
-    0 0 10px #ffffff,
-    0 0 20px #fff,
-    0 0 40px rgb(193, 52, 206),
-    0 0 80px rgb(234, 0, 255),
-    0 0 90px rgb(234, 0, 255),
-    0 0 100px rgb(234, 0, 255),
-    0 0 150px rgb(234, 0, 255);
+    text-shadow: 0 0 5px #73c9ff, 0 0 10px #ffffff, 0 0 20px #fff, 0 0 40px rgb(71 163 239), 0 0 80px rgb(65 174 194);
 }
+
+/**/
+
+.website-main-content {
+    width: 100%;
+    height: 41.6em;
+
+}
+.main-sizer {
+    display: flex;
+    width: 100%;
+    height: inherit;
+
+}
+.main-left-flex, .main-right-flex {
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+    background-color:rgb(27, 25, 25);
+    color: white !important;
+    padding: 50px 30px;
+    line-height: 1.3;
+    letter-spacing: 4px;
+}
+.main-left-flex {
+    width: 40%;
+}
+.main-right-flex {
+    width: 60%;
+}
+.main-left-flex h1 {
+    text-shadow: 0 0 5px #50c3c4, 0 0 10px rgb(18 122 161), 0 0 12px rgb(100 89 89);
+
+}
+.main-left-flex {
+    
+}
+
+
+
+/*butões*/
+
+.neon-btn {
+    position: relative;
+    background: rgb(33, 33, 33);
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: x-large;
+    letter-spacing: 3px;
+    font-weight: 400;
+    display: flex;
+    width: 195px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px;
+    transition: 0.8s;
+}
+
+.neon-btn:hover {
+    
+    box-shadow: 0 0 20px var(--clr);
+}
+/**/
