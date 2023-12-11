@@ -169,15 +169,14 @@ a {
 footer {
     display: flex;
     width: 100%;
-    min-height: 600px;
-    padding: 3%;
+    padding: 6% 3%;
     justify-content: space-evenly;
     background-color: rgb(27, 25, 25);
     color: white;
 }
 .footer-main-div {
     display: flex;
-    gap: 40px;
+    gap: 35px;
 }
 footer .social {
     display: flex;
@@ -227,6 +226,27 @@ footer ul {
 
 /*Media queries*/ 
 
+/*Laptop pequeno*/
+@media screen and (max-width: 1024px) {
+
+    /*Footer*/
+    footer {
+        text-align: center;
+        justify-content: center;
+    }
+    footer ul {
+        justify-content: center;
+    }
+    .footer-main-div {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    .footer-column {
+        width: 100%;
+    }
+}
+
 /*Tablet*/
 @media screen and (max-width: 768px) {
     
@@ -257,4 +277,17 @@ footer ul {
     }
 }
 
+/*Mobile L*/
+@media screen and (max-width: 425px) {
+    
+    /*Navbar*/
+    .neon-navbar ul {
+        gap: 15px;
+    }
+
+    /*Main*/
+    .main-left-flex h1 {
+        font-size: 28px;
+    }
+}
 /**/  
