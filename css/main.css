@@ -82,9 +82,6 @@ a {
     text-shadow: 0 0 5px #50c3c4, 0 0 10px rgb(18 122 161), 0 0 12px rgb(100 89 89);
 
 }
-.main-left-flex {
-    
-}
 
 /**/
 .division-advices {
@@ -174,10 +171,13 @@ footer {
     width: 100%;
     min-height: 600px;
     padding: 3%;
+    justify-content: space-evenly;
     background-color: rgb(27, 25, 25);
+    color: white;
 }
 .footer-main-div {
     display: flex;
+    gap: 40px;
 }
 footer .social {
     display: flex;
@@ -193,6 +193,29 @@ footer ul {
     gap: 15px;
 }
 
+/*Footer colunas*/
+.footer-column {
+    width: 250px;
+    min-width: 180px;
+}
+.footer-column a {
+    color: white;
+}
+.footer-column ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    list-style: none;
+}
+
+/*Footer coluna redes sociais*/
+.footer-socials {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    list-style: none;
+}
+
 /**/
 
 /*Font awesome*/
@@ -204,9 +227,33 @@ footer ul {
 
 /*Media queries*/ 
 
+/*Tablet*/
 @media screen and (max-width: 768px) {
+    
+    .main-sizer {
+        flex-direction: column;
+    
+    }
+    .website-main-content {
+        height: auto;
+    }
+    .main-left-flex{
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        padding: 10px 20px 50px 20px;
+        width: 100%;
+    }
+    .main-right-flex {
+        display: none;
+        
+    }
+    
     .division-advices-pad {
         flex-direction: column;
+    }
+    .division-advices-column {
+        width: 60%;
     }
 }
 
