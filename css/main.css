@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -13,20 +12,24 @@ body {
     margin: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
 a {
     text-decoration: none;
 }
+
 @font-face {
     font-family: NEON;
     src: url(/textfonts/NEON____.TTF);
     font-family: Monoton-Regular;
     src: url(/textfonts//Monoton-Regular.ttf);
 }
+
 .background {
     width: 100%;
     height: 100%;
-    background-color:rgb(27, 25, 25);
+    background-color: rgb(27, 25, 25);
 }
+
 .neon-navbar {
     width: 100%;
     min-height: 6em;
@@ -37,7 +40,7 @@ a {
     flex: auto;
     border-bottom: 2px solid transparent;
     transition: cubic-bezier(0, 0.41, 0.84, 1.11) 0.9s;
-    
+
 }
 
 .neon-navbar:hover {
@@ -49,7 +52,8 @@ a {
     list-style: none;
     gap: 20px;
 }
-.neon-navbar ul li a{
+
+.neon-navbar ul li a {
     letter-spacing: 2px;
     text-decoration: none;
     color: rgb(255, 255, 255);
@@ -63,17 +67,20 @@ a {
     height: 41.6em;
 
 }
+
 .main-sizer {
     display: flex;
     width: 100%;
     height: inherit;
 
 }
-.main-left-flex, .main-sizer-neon-text {
+
+.main-left-flex,
+.main-sizer-neon-text {
     display: flex;
     flex-flow: column;
     gap: 20px;
-    background-color:rgb(27, 25, 25);
+    background-color: rgb(27, 25, 25);
     color: white !important;
     padding: 50px 30px;
     line-height: 1.3;
@@ -84,10 +91,12 @@ a {
 .main-left-flex {
     width: 40%;
 }
+
 .main-left-flex h1 {
     text-shadow: 0 0 5px #50c3c4, 0 0 10px rgb(18 122 161), 0 0 12px rgb(100 89 89);
 
 }
+
 /**/
 
 /*main-sizer-neon-text*/
@@ -96,11 +105,13 @@ a {
     justify-content: space-around;
     align-items: center;
     font-size: 48px;
-    
+
 }
-.neon-right .Neon-Monoton{
+
+.neon-right .Neon-Monoton {
     transform: rotate(-45deg);
 }
+
 .Neon-Monoton {
     color: #53d5e4;
     --color1: #b0c3c4;
@@ -116,12 +127,14 @@ a {
     animation: flicker steps(100) var(--interval) 1s infinite;
     transform: rotate(45deg);
 }
+
 @keyframes flicker {
     50% {
         color: white;
         filter: saturate(200%) hue-rotate(20deg);
     }
 }
+
 /**/
 
 /**/
@@ -132,6 +145,7 @@ a {
     display: flex;
     color: black;
 }
+
 .division-advices-pad {
     width: 100%;
     padding: 20px;
@@ -141,6 +155,7 @@ a {
     display: flex;
     flex-direction: row;
 }
+
 .division-advices-column {
     width: 33%;
     min-height: 10em;
@@ -150,14 +165,16 @@ a {
     justify-content: center;
     gap: 10px;
 }
+
 .division-advices-column h3 {
     padding-top: 15px;
 }
+
 .division-advices-column .icn {
     border-radius: 20px;
     color: #47f4f9;
-    text-shadow: 0px 0px 20px #47f4f9, 
-                0px 0px 40px #47f4f9;
+    text-shadow: 0px 0px 20px #47f4f9,
+        0px 0px 40px #47f4f9;
     animation: animate 3s linear infinite;
 }
 
@@ -165,22 +182,46 @@ a {
     from {
         filter: hue-rotate(0deg);
     }
+
     to {
         filter: hue-rotate(360deg);
     }
 }
+
 #animation-1 {
     animation-delay: 0.3s;
 }
-#animation-2{
+
+#animation-2 {
     animation-delay: 0.6s;
 }
+
 #animation-3 {
     animation-delay: 0.9s;
 }
+
 /**/
 
+/*QR code*/
 
+.QRcode-container {
+    width: 100%;
+    height: auto;
+    font-size: 20px;
+    display: flex;
+    background-color: white;
+    padding: 2%;
+}
+
+.QRcode-container-left-column {
+    width: 70%;
+}
+
+.QRcode-container-right-column {
+    width: 30%;
+}
+
+/**/
 /*butões*/
 
 .neon-btn {
@@ -201,9 +242,10 @@ a {
 }
 
 .neon-btn:hover {
-    
+
     box-shadow: 0 0 20px var(--clr);
 }
+
 /**/
 
 /*Footer*/
@@ -215,18 +257,30 @@ footer {
     background-color: rgb(27, 25, 25);
     color: white;
 }
+
+.footer h2 {
+    font-size: 26px;
+}
+
+.footer a,
+.footer p {
+    font-size: 20px;
+}
+
 .footer-main-div {
     display: flex;
-    gap: 35px;
+    gap: 30px;
 }
+
 footer .social {
     display: flex;
     color: white;
     flex-flow: row;
     border-radius: 20px;
-    text-shadow: 0px 0px 20px #47f4f9, 
-                0px 0px 40px #47f4f9;
+    text-shadow: 0px 0px 20px #47f4f9,
+        0px 0px 40px #47f4f9;
 }
+
 footer ul {
     display: flex;
     list-style: none;
@@ -235,12 +289,14 @@ footer ul {
 
 /*Footer colunas*/
 .footer-column {
-    width: 250px;
+    width: 260px;
     min-width: 180px;
 }
+
 .footer-column a {
     color: white;
 }
+
 .footer-column ul {
     display: flex;
     flex-direction: column;
@@ -259,30 +315,46 @@ footer ul {
 /**/
 
 /*Font awesome*/
-.fas, .fab {
+.fas,
+.fab {
     font-size: 2em;
 }
+
 /**/
 
 
-/*Media queries*/ 
+/*Media queries*/
 
 /*Laptop pequeno*/
 @media screen and (max-width: 1024px) {
 
+    /*QR code*/
+
+    .QRcode-container-left-column {
+        width: 60%;
+    }
+
+    .QRcode-container-right-column {
+        width: 40%;
+    }
+
+    /**/
     /*Footer*/
     footer {
         text-align: center;
         justify-content: center;
     }
+
     footer ul {
         justify-content: center;
     }
+
     .footer-main-div {
         display: flex;
         flex-direction: column;
         gap: 50px;
     }
+
     .footer-column {
         width: 100%;
     }
@@ -290,37 +362,62 @@ footer ul {
 
 /*Tablet*/
 @media screen and (max-width: 768px) {
-    
+
     .main-sizer {
         flex-direction: column;
-    
+
     }
+
     .website-main-content {
         height: auto;
     }
-    .main-left-flex{
+
+    .main-left-flex {
         justify-content: center;
         text-align: center;
         align-items: center;
-        padding: 10px 20px 50px 20px;
+        padding: 10px 9% 40px 9%;
         width: 100%;
     }
+
     .main-sizer-neon-text {
         display: none;
-        
+
     }
-    
+
     .division-advices-pad {
         flex-direction: column;
     }
+
     .division-advices-column {
         width: 60%;
     }
+
+    /*QR code*/
+
+    .QRcode-container {
+
+        flex-direction: column;
+        padding: 3% 0%;
+    }
+
+    .QRcode-container-left-column,
+    .QRcode-container-right-column {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+    /**/
 }
 
 /*Mobile L*/
 @media screen and (max-width: 425px) {
-    
+
     /*Navbar*/
     .neon-navbar ul {
         gap: 15px;
@@ -331,8 +428,5 @@ footer ul {
         font-size: 28px;
     }
 }
-/**/  
 
-
-
-
+/**/

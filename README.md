@@ -7,4 +7,4 @@ Membros do grupo: 1
 
 Ideia do projeto: Um site simples para mostrar diferentes estilos de animações / design relacionados com neon.
 
-QR Code: Em criação
+QR Code: criado: QRcode.png
