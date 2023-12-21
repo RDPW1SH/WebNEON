@@ -1,66 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    outline: none;
-}
-
-body {
-    width: 100%;
-    height: 100%;
-    min-height: 100vh;
-    margin: 0;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-a {
-    text-decoration: none;
-}
-
-@font-face {
-    font-family: NEON;
-    src: url(/textfonts/NEON____.TTF);
-    font-family: Monoton-Regular;
-    src: url(/textfonts//Monoton-Regular.ttf);
-}
-
-.background {
-    width: 100%;
-    height: 100%;
-    background-color: rgb(27, 25, 25);
-}
-
-.neon-navbar {
-    width: 100%;
-    min-height: 6em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0.5;
-    flex: auto;
-    border-bottom: 2px solid transparent;
-    transition: cubic-bezier(0, 0.41, 0.84, 1.11) 0.9s;
-
-}
-
-.neon-navbar:hover {
-    opacity: 0.9;
-}
-
-.neon-navbar ul {
-    display: flex;
-    list-style: none;
-    gap: 20px;
-}
-
-.neon-navbar ul li a {
-    letter-spacing: 2px;
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    text-shadow: 0 0 5px #73c9ff, 0 0 10px #ffffff, 0 0 20px #fff, 0 0 40px rgb(71 163 239), 0 0 80px rgb(65 174 194);
-}
-
-/**/
+/*Conteudo principal*/
 
 .website-main-content {
     width: 100%;
@@ -137,7 +75,7 @@ a {
 
 /**/
 
-/**/
+/*Rainbow icons row*/
 .division-advices {
     width: 100%;
     height: auto;
@@ -202,6 +140,58 @@ a {
 
 /**/
 
+/*Descobre*/
+
+.discover-container {
+    width: 100%;
+    height: auto;
+    padding: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: linear-gradient(-45deg, #1a1a1a 0%, #121212 25%, #1c1c1c 51%, #5f5e5e 100%);
+    animation: AnimateBG 6s ease infinite;
+
+}
+
+@-webkit-keyframes AnimateBG {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes AnimateBG {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.discover-container-row {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: white;
+}
+
+/**/
+
 /*QR code*/
 
 .QRcode-container {
@@ -210,7 +200,7 @@ a {
     font-size: 20px;
     display: flex;
     background-color: white;
-    padding: 2%;
+    padding: 2% 5%;
 }
 
 .QRcode-container-left-column {
@@ -248,79 +238,6 @@ a {
 
 /**/
 
-/*Footer*/
-footer {
-    display: flex;
-    width: 100%;
-    padding: 6% 3%;
-    justify-content: space-evenly;
-    background-color: rgb(27, 25, 25);
-    color: white;
-}
-
-.footer h2 {
-    font-size: 26px;
-}
-
-.footer a,
-.footer p {
-    font-size: 20px;
-}
-
-.footer-main-div {
-    display: flex;
-    gap: 30px;
-}
-
-footer .social {
-    display: flex;
-    color: white;
-    flex-flow: row;
-    border-radius: 20px;
-    text-shadow: 0px 0px 20px #47f4f9,
-        0px 0px 40px #47f4f9;
-}
-
-footer ul {
-    display: flex;
-    list-style: none;
-    gap: 15px;
-}
-
-/*Footer colunas*/
-.footer-column {
-    width: 260px;
-    min-width: 180px;
-}
-
-.footer-column a {
-    color: white;
-}
-
-.footer-column ul {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    list-style: none;
-}
-
-/*Footer coluna redes sociais*/
-.footer-socials {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    list-style: none;
-}
-
-/**/
-
-/*Font awesome*/
-.fas,
-.fab {
-    font-size: 2em;
-}
-
-/**/
 
 
 /*Media queries*/
@@ -339,25 +256,6 @@ footer ul {
     }
 
     /**/
-    /*Footer*/
-    footer {
-        text-align: center;
-        justify-content: center;
-    }
-
-    footer ul {
-        justify-content: center;
-    }
-
-    .footer-main-div {
-        display: flex;
-        flex-direction: column;
-        gap: 50px;
-    }
-
-    .footer-column {
-        width: 100%;
-    }
 }
 
 /*Tablet*/
@@ -417,11 +315,6 @@ footer ul {
 
 /*Mobile L*/
 @media screen and (max-width: 425px) {
-
-    /*Navbar*/
-    .neon-navbar ul {
-        gap: 15px;
-    }
 
     /*Main*/
     .main-left-flex h1 {
