@@ -189,6 +189,11 @@
     gap: 15px;
     color: white;
 }
+.discover-container-row a {
+    color: #47f4f9;
+    box-shadow: 2px 2px 2px 2px #35e2ce,
+                4px 4px 4px 4px #47f4f9;
+}
 
 /**/
 
