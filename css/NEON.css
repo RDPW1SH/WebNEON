@@ -1,5 +1,72 @@
-.main-content {
+.main-container {
     width: 100%;
     height: auto;
-    display: flex;
+    padding-top: 2%;
 }
+
+.main-rows {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 2%;
+}
+
+.main-container-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background-color: black;
+    min-height: 200px;
+
+}
+
+/*NEON EXAMPLES*/
+
+.example1 {
+    color: blueviolet;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px rgb(226, 42, 217),
+        0 0 82px rgb(226, 42, 217),
+        0 0 92px rgb(226, 42, 217),
+        0 0 102px rgb(226, 42, 217);
+}
+
+.example2 {
+    animation: flicker 1.5s infinite alternate;
+}
+
+@keyframes flicker {
+
+    0%,
+    18%,
+    22%,
+    25%,
+    53%,
+    57%,
+    100% {
+
+        text-shadow:
+            0 0 4px #fff,
+            0 0 11px #fff,
+            0 0 19px #fff,
+            0 0 40px #0fa,
+            0 0 80px #0fa,
+            0 0 90px #0fa,
+            0 0 100px #0fa,
+            0 0 150px #0fa;
+
+    }
+
+    20%,
+    24%,
+    55% {
+        text-shadow: none;
+    }
+}
+
+/**/
