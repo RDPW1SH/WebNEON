@@ -17,7 +17,7 @@
     justify-content: space-around;
     align-items: center;
     padding: 20px;
-    background-color: black;
+    background-color: #f3f3f3;
     min-height: 200px;
 
 }
@@ -37,6 +37,7 @@
 }
 
 .example2 {
+    color: white;
     animation: flicker 1.5s infinite alternate;
 }
 
@@ -70,3 +71,17 @@
 }
 
 /**/
+
+/*Recomendations*/
+.recomendations-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.recomendations {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
