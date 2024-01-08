@@ -87,8 +87,7 @@
     }
 }
 
-
-.Brilho {
+.Chamas {
     display: inline-block;
     margin: 0;
 
@@ -176,3 +175,24 @@
     flex-direction: column;
     gap: 50px;
 }
+
+/**/
+
+/*Explanation*/
+
+.explanation-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    text-align: center;
+    justify-content: center;
+}
+.explanation {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/**/
