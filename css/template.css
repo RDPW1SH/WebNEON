@@ -19,13 +19,6 @@ a {
     text-decoration: none;
 }
 
-@font-face {
-    font-family: NEON;
-    src: url(/textfonts/NEON____.TTF);
-    font-family: Monoton-Regular;
-    src: url(/textfonts//Monoton-Regular.ttf);
-}
-
 .background {
     width: 100%;
     height: 100%;

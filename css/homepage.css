@@ -56,7 +56,7 @@
     --color2: #3aeed1;
     --color3: #35e2ce;
     --color4: #43a199;
-    font-family: Monoton-Regular;
+    font-family: 'Monoton', sans-serif;
     --interval: 1s;
     display: block;
     text-shadow: 0 0 10px var(--color1), 0 0 20px var(--color2), 0 0 40px var(--color3), 0 0 80px var(--color4);
