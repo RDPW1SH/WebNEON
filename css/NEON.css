@@ -1,7 +1,8 @@
+
+
 .main-container {
     width: 100%;
     height: auto;
-    padding-top: 2%;
 }
 
 .main-rows {
@@ -9,7 +10,7 @@
     text-align: center;
     flex-direction: column;
     gap: 20px;
-    padding-bottom: 2%;
+    padding: 2% 2%;
 }
 
 .main-container-content {
@@ -216,3 +217,32 @@ tr, td {
 }
 
 /**/
+
+/*Media queries*/
+
+@media screen and (max-width: 768px) {
+
+    /*Chamas*/
+    .Chamas {
+        font-size: 48px;
+    }
+}
+@media screen and (max-width: 468px) {
+
+    /*Chamas*/
+    .main-rows {
+        font-size: 18px;
+    }
+    /*Explanation*/
+    .explanation-container {
+        font-size: 14px;
+        padding: 5% 2%;
+
+    }
+    .explanation-table {
+        padding: 10px;
+    }
+    tr, th,td {
+        padding: 5px;
+    }
+}

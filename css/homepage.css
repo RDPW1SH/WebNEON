@@ -296,6 +296,13 @@
         width: 60%;
     }
 
+    /*Discover*/
+
+    .discover-container {
+        padding: 5%;
+       
+    }
+
     /*QR code*/
 
     .QRcode-container {
@@ -317,7 +324,6 @@
 
     /**/
 }
-
 /*Mobile L*/
 @media screen and (max-width: 425px) {
 
